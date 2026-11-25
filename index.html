@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITNESS CENTER and GYM | Elevate Your Strength. Redefine Your Limits.</title>
+  <meta name="description" content="FITNESS CENTER and GYM — Premier strength, conditioning, functional turf, and wellness destination. Elevate Your Strength. Redefine Your Limits." />
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+
+  <!-- Live Toast Feedback Stack -->
+  <div class="toast-stack" id="toastStack"></div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top navbar-premium" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="#home">
+        <span class="brand-logo-box"><i class="bi bi-lightning-charge-fill"></i></span>
+        <div>
+          <span class="font-display fw-bolder fs-5 text-white d-block lh-1" id="navBrandTitle">FITNESS CENTER</span>
+          <small class="text-gradient fw-bold" style="font-size: 0.72rem; letter-spacing: 0.14em;">AND GYM</small>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item"><a class="nav-link " href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#memberships">Memberships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-flex flex-wrap align-items-center gap-2">
+          <button type="button" class="btn btn-brand btn-sm px-4 py-2" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Pro Performance">
+            Join Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       1. HERO SECTION
+       ======================================================================== -->
+  <header id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="section-badge">
+            <i class="bi bi-fire text-warning"></i>
+            <span id="heroTaglineBadge">PREMIER ATHLETIC & PERFORMANCE CLUB</span>
+          </div>
+          <h1 class="hero-title text-white mb-3" id="heroHeading">
+            Elevate Your Strength. <span class="text-gradient">Redefine Your Limits.</span>
+          </h1>
+          <p class="lead text-light opacity-75 mb-4 pe-lg-5" id="heroSubtitle" style="max-width: 680px;">
+            Experience championship-grade strength equipment, metabolic conditioning turf, science-backed coaching, and an unstoppable community engineered for peak human performance.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <button type="button" class="btn btn-brand btn-lg d-inline-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#joinModal" data-plan="Pro Performance" id="heroPrimaryCta">
+              <span>Join Now</span>
+              <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+            <a href="#memberships" class="btn btn-glass btn-lg d-inline-flex align-items-center gap-2" id="heroSecondaryCta">
+              <span>Explore Memberships</span>
+              <i class="bi bi-grid-1x2"></i>
+            </a>
+          </div>
+
+          <!-- Animated Key Statistics -->
+          <div class="row g-3" id="heroStatsContainer">
+            <div class="col-6 col-sm-3">
+              <div class="stat-pill text-center">
+                <h3 class="fw-bolder text-gradient mb-0" id="statMembers">2,400+</h3>
+                <small class="text-secondary fw-semibold">Active Members</small>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-pill text-center">
+                <h3 class="fw-bolder text-gradient mb-0" id="statTrainers">18+</h3>
+                <small class="text-secondary fw-semibold">Elite Coaches</small>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-pill text-center">
+                <h3 class="fw-bolder text-gradient mb-0" id="statEquipment">140+</h3>
+                <small class="text-secondary fw-semibold">Pro Machines</small>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="stat-pill text-center">
+                <h3 class="fw-bolder text-gradient mb-0" id="statYears">12+</h3>
+                <small class="text-secondary fw-semibold">Years Excellence</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <a href="#about" class="scroll-down-cue">
+              <span>Scroll to Explore</span>
+              <i class="bi bi-chevron-double-down text-info"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. ABOUT US SECTION
+       ======================================================================== -->
+  <section id="about" class="section-padding reveal-section">
+    <div class="ambient-orb orb-purple" style="top: 10%; left: -120px;"></div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="FITNESS CENTER and GYM Training Floor" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" loading="lazy" />
+            <div class="glass-card p-3 p-sm-4 position-absolute bottom-0 end-0 m-3 m-sm-4" style="max-width: 270px;">
+              <div class="d-flex align-items-center gap-3">
+                <div class="brand-logo-box flex-shrink-0"><i class="bi bi-trophy-fill"></i></div>
+                <div>
+                  <h6 class="fw-bold text-white mb-0">24/7 Biometric Access</h6>
+                  <small class="text-secondary">Train on your schedule with smart climate control.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <span class="section-badge"><i class="bi bi-stars"></i> About Our Sanctuary</span>
+          <h2 class="display-6 fw-bolder text-white mb-3">
+            Built for Athletes, Beginners & <span class="text-gradient">Relentless Achievers</span>
+          </h2>
+          <p class="text-secondary mb-4" id="aboutIntroText">
+            At <strong>FITNESS CENTER and GYM</strong>, we rejected the overcrowded, uninspiring big-box gym model. Instead, we engineered a high-energy performance environment where calibrated strength equipment, biomechanical precision, and supportive coaching converge.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="glass-card p-3 h-100">
+                <div class="text-info fs-4 mb-2"><i class="bi bi-bullseye"></i></div>
+                <h5 class="fw-bold text-white h6">Our Mission</h5>
+                <p class="small text-secondary mb-0">To empower every member with world-class training tools, measurable programming, and resilient habits.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-card p-3 h-100">
+                <div class="text-primary fs-4 mb-2" style="color: #a855f7 !important;"><i class="bi bi-eye-fill"></i></div>
+                <h5 class="fw-bold text-white h6">Our Vision</h5>
+                <p class="small text-secondary mb-0">To set the gold standard in modern strength and wellness communities across the region.</p>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="fw-bold text-white text-uppercase small tracking-wider mb-3">Why Members Choose Us</h6>
+          <div class="row g-2 small text-light">
+            <div class="col-sm-6 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-info"></i> Competition-calibrated free weights</div>
+            <div class="col-sm-6 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-info"></i> Certified NSCA & ACE coaches</div>
+            <div class="col-sm-6 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-info"></i> Infrared sauna & cold plunge recovery</div>
+            <div class="col-sm-6 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-info"></i> Complimentary InBody 3D scan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. FACILITIES SECTION
+       ======================================================================== -->
+  <section id="facilities" class="section-padding" style="background-color: var(--bg-surface);">
+    <div class="ambient-orb orb-blue" style="bottom: 5%; right: -100px;"></div>
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-5" style="max-width: 720px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-building-gear"></i> World-Class Zones</span>
+        <h2 class="display-6 fw-bolder text-white">Engineered <span class="text-gradient">Training Facilities</span></h2>
+        <p class="text-secondary">Five specialized training zones spanning 28,000 sq. ft. of shock-absorbing acoustic flooring and custom architectural lighting.</p>
+      </div>
+
+      <div class="row g-4" id="facilitiesGrid">
+        <!-- Populated dynamically from CMS State -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. TRAINING PROGRAMS & CLASSES SECTION
+       ======================================================================== -->
+  <section id="programs" class="section-padding">
+    <div class="container position-relative z-1">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-3" data-aos="fade-up">
+        <div>
+          <span class="section-badge"><i class="bi bi-activity"></i> Disciplines & Coaching</span>
+          <h2 class="display-6 fw-bolder text-white mb-0">Signature <span class="text-gradient">Training Programs</span></h2>
+        </div>
+        <a href="#schedule" class="btn btn-glass">View Weekly Timetable <i class="bi bi-calendar3 ms-1"></i></a>
+      </div>
+
+      <div class="row g-4" id="programsGrid">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========================================================================
+       6. GALLERY SECTION (WITH CATEGORY FILTERS & LIGHTBOX)
+       ======================================================================== -->
+  <section id="gallery" class="section-padding">
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-4" style="max-width: 700px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-camera-fill"></i> Inside The Arena</span>
+        <h2 class="display-6 fw-bolder text-white">Atmosphere & <span class="text-gradient">Visual Gallery</span></h2>
+        <p class="text-secondary">Explore our training floor, heavy iron racks, high-energy group sessions, and member transformations.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" id="galleryFilters">
+        <button class="filter-btn active" data-filter="All">All Photos</button>
+        <button class="filter-btn" data-filter="Gym Interior">Gym Interior</button>
+        <button class="filter-btn" data-filter="Equipment">Equipment</button>
+        <button class="filter-btn" data-filter="Training Sessions">Training Sessions</button>
+        <button class="filter-btn" data-filter="Events">Events & Members</button>
+      </div>
+
+      <div class="row g-4" id="galleryGrid">
+        <!-- Populated dynamically from CMS State -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. MEMBERSHIP PACKAGES & PRICING
+       ======================================================================== -->
+  <section id="memberships" class="section-padding" style="background-color: var(--bg-surface);">
+    <div class="ambient-orb orb-blue" style="top: 10%; left: -120px;"></div>
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-5" style="max-width: 720px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-gem"></i> Transparent Plans</span>
+        <h2 class="display-6 fw-bolder text-white">Membership <span class="text-gradient">Packages & Pricing</span></h2>
+        <p class="text-secondary">Zero hidden initiation fees. Pause anytime for travel. Upgrade or customize your plan with our coaching team.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch" id="membershipsGrid">
+        <!-- Populated dynamically from CMS State -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. INTERACTIVE WEEKLY SCHEDULE
+       ======================================================================== -->
+  <section id="schedule" class="section-padding">
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-4" style="max-width: 720px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-clock-history"></i> Live Timetable</span>
+        <h2 class="display-6 fw-bolder text-white">Weekly <span class="text-gradient">Class Schedule</span></h2>
+        <p class="text-secondary">Filter by day or training discipline to reserve your spot in upcoming small-group sessions.</p>
+      </div>
+
+      <!-- Day Filter Tabs -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="scheduleDayFilters">
+        <button class="filter-btn active" data-day="All">All Days</button>
+        <button class="filter-btn" data-day="Monday">Monday</button>
+        <button class="filter-btn" data-day="Tuesday">Tuesday</button>
+        <button class="filter-btn" data-day="Wednesday">Wednesday</button>
+        <button class="filter-btn" data-day="Thursday">Thursday</button>
+        <button class="filter-btn" data-day="Friday">Friday</button>
+        <button class="filter-btn" data-day="Saturday">Saturday</button>
+      </div>
+
+      <div class="glass-card p-3 p-md-4 overflow-hidden">
+        <div class="table-responsive">
+          <table class="table schedule-table mb-0">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Class / Program</th>
+                <th>Coach</th>
+                <th>Intensity</th>
+                <th class="text-end">Action</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleTableBody">
+              <!-- Populated dynamically from CMS State -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. TESTIMONIALS SWIPER CAROUSEL
+       ======================================================================== -->
+  <section id="testimonials" class="section-padding" style="background-color: var(--bg-surface);">
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-5" style="max-width: 700px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-chat-quote-fill"></i> Member Transformations</span>
+        <h2 class="display-6 fw-bolder text-white">Real Results. <span class="text-gradient">Verified Stories.</span></h2>
+        <p class="text-secondary">Hear directly from athletes, busy professionals, and everyday members who redefined their limits with us.</p>
+      </div>
+
+      <div class="swiper testimonialsSwiper pb-5">
+        <div class="swiper-wrapper" id="testimonialsWrapper">
+          <!-- Populated dynamically from CMS State -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. CONTACT US & REAL EMAIL ARCHITECTURE
+       ======================================================================== -->
+  <section id="contact" class="section-padding">
+    <div class="container position-relative z-1">
+      <div class="text-center mx-auto mb-5" style="max-width: 720px;" data-aos="fade-up">
+        <span class="section-badge"><i class="bi bi-send-check-fill"></i> Get In Touch</span>
+        <h2 class="display-6 fw-bolder text-white">Start Your <span class="text-gradient">Transformation Today</span></h2>
+        <p class="text-secondary">Book a free facility tour, claim a complimentary 3-day VIP pass, or message our coaches directly.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Left Info & Map -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="fw-bold text-white mb-4">Club Headquarters</h4>
+
+              <div class="d-flex gap-3 mb-3">
+                <div class="brand-logo-box flex-shrink-0" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h6 class="fw-bold text-white mb-0">Physical Address</h6>
+                  <p class="small text-secondary mb-0" id="contactAddress">740 Apex Performance Blvd, Suite 200, Colombo 03</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-3">
+                <div class="brand-logo-box flex-shrink-0" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h6 class="fw-bold text-white mb-0">Direct Phone & WhatsApp</h6>
+                  <p class="small text-secondary mb-0" id="contactPhone">+94 11 284 9920</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-3">
+                <div class="brand-logo-box flex-shrink-0" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h6 class="fw-bold text-white mb-0">Official Email</h6>
+                  <p class="small text-secondary mb-0" id="contactEmail">concierge@fitnesscentergym.com</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 mb-4">
+                <div class="brand-logo-box flex-shrink-0" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <h6 class="fw-bold text-white mb-0">Opening Hours</h6>
+                  <p class="small text-secondary mb-0" id="contactHours">Mon–Fri: 5:00 AM – 11:00 PM | Sat–Sun: 6:00 AM – 9:00 PM</p>
+                </div>
+              </div>
+
+              <!-- Direct WhatsApp CTA -->
+              <a href="#" id="whatsappDirectLink" target="_blank" rel="noopener" class="btn btn-success w-100 py-2.5 fw-bold rounded-3 d-flex align-items-center justify-content-center gap-2 mb-4">
+                <i class="bi bi-whatsapp fs-5"></i>
+                <span>Chat Instantly on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="rounded-3 overflow-hidden border border-secondary border-opacity-25" style="height: 200px;">
+              <iframe
+                title="FITNESS CENTER and GYM Location Map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=79.8450%2C6.9050%2C79.8650%2C6.9200&layer=mapnik&marker=6.9125%2C79.8550"
+                style="width: 100%; height: 100%; border: 0; filter: invert(90%) hue-rotate(180deg);"
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Contact Form with Formspree / EmailJS Live Dispatch -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card p-4 p-md-5 h-100">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+              <h4 class="fw-bold text-white mb-0">Send Us a Message</h4>
+              <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25">
+                <i class="bi bi-hdd-network me-1"></i> Formspree / SMTP Ready
+              </span>
+            </div>
+            <p class="small text-secondary mb-4">
+              Connected to real HTTP Form Endpoint architecture (configurable in Admin CMS &rarr; Contact &amp; Email API). Falls back to verified mail client dispatch if endpoint ID is not yet set.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="cName" class="form-label small fw-semibold">Full Name *</label>
+                  <input type="text" class="form-control" id="cName" name="name" placeholder="Alex Rivera" required />
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cEmail" class="form-label small fw-semibold">Email Address *</label>
+                  <input type="email" class="form-control" id="cEmail" name="email" placeholder="alex@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cPhone" class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                  <input type="tel" class="form-control" id="cPhone" name="phone" placeholder="+94 77 123 4567" required />
+                  <div class="invalid-feedback">Please provide a contact number.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cSubject" class="form-label small fw-semibold">Inquiry Subject *</label>
+                  <select class="form-select" id="cSubject" name="subject" required>
+                    <option value="">Choose an option...</option>
+                    <option value="Membership Inquiry">Membership Inquiry</option>
+                    <option value="Free 3-Day VIP Trial">Free 3-Day VIP Trial Pass</option>
+                    <option value="1-on-1 Personal Training">1-on-1 Personal Training</option>
+                    <option value="Corporate Wellness">Corporate Wellness Package</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label for="cMessage" class="form-label small fw-semibold">Your Fitness Goals / Message *</label>
+                  <textarea class="form-control" id="cMessage" name="message" rows="4" placeholder="Tell us about your fitness goals, preferred training times, or questions..." required></textarea>
+                  <div class="invalid-feedback">Please enter a brief message.</div>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-brand w-100 py-3 d-flex align-items-center justify-content-center gap-2" id="contactSubmitBtn">
+                    <i class="bi bi-send-fill"></i>
+                    <span>Send Message</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Real Submission Status Feedback Alert -->
+            <div id="contactFormStatus" class="mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. FOOTER
+       ======================================================================== -->
+  <footer class="pt-5 pb-4 border-top border-secondary border-opacity-25" style="background-color: #050509;">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-logo-box"><i class="bi bi-lightning-charge-fill"></i></span>
+            <div>
+              <span class="font-display fw-bolder fs-5 text-white d-block lh-1">FITNESS CENTER</span>
+              <small class="text-gradient fw-bold" style="font-size: 0.72rem; letter-spacing: 0.14em;">AND GYM</small>
+            </div>
+          </div>
+          <p class="small text-secondary mb-3">
+            Elevate Your Strength. Redefine Your Limits. A premier high-performance training sanctuary combining elite strength equipment, conditioning turf, and expert coaching.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#contact" class="btn btn-glass btn-sm rounded-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#contact" class="btn btn-glass btn-sm rounded-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#contact" class="btn btn-glass btn-sm rounded-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#contact" class="btn btn-glass btn-sm rounded-circle" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <h6 class="fw-bold text-white mb-3">Navigation</h6>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-secondary text-decoration-none">About Us</a></li>
+            <li><a href="#facilities" class="text-secondary text-decoration-none">Facilities</a></li>
+            <li><a href="#programs" class="text-secondary text-decoration-none">Programs</a></li>
+            <li><a href="#trainers" class="text-secondary text-decoration-none">Trainers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <h6 class="fw-bold text-white mb-3">Membership & Classes</h6>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="#memberships" class="text-secondary text-decoration-none">Pricing Packages</a></li>
+            <li><a href="#schedule" class="text-secondary text-decoration-none">Weekly Schedule</a></li>
+            <li><a href="#gallery" class="text-secondary text-decoration-none">Facility Gallery</a></li>
+            <li><a href="#testimonials" class="text-secondary text-decoration-none">Member Reviews</a></li>
+            <li><a href="#contact" class="text-secondary text-decoration-none">Book Free Trial</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <h6 class="fw-bold text-white mb-3">Hours & Contact</h6>
+          <p class="small text-secondary mb-2"><i class="bi bi-clock text-info me-2"></i><span id="footerHours">Mon–Fri: 5AM–11PM | Sat–Sun: 6AM–9PM</span></p>
+          <p class="small text-secondary mb-2"><i class="bi bi-telephone text-info me-2"></i><span id="footerPhone">+94 11 284 9920</span></p>
+          <p class="small text-secondary mb-0"><i class="bi bi-geo-alt text-info me-2"></i><span id="footerAddress">740 Apex Performance Blvd, Colombo 03</span></p>
+        </div>
+      </div>
+ <button type="button" class="btn btn-glass btn-sm px-3 py-1.5 d-inline-flex align-items-center gap-2" id="openAdminBtn">
+            <i class="bi bi-shield-lock-fill text-info"></i>
+            <span>Admin CMS</span>
+          </button>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-3 small text-secondary">
+        <p class="mb-2 mb-sm-0">&copy; <span id="currentYear">2026</span> FITNESS CENTER and GYM. All Rights Reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-secondary text-decoration-none" id="footerAdminTrigger">Owner CMS Login</a>
+          <span>&bull;</span>
+          <a href="#contact" class="text-secondary text-decoration-none">Privacy &amp; Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Chat Button -->
+  <a href="#" id="floatingWhatsappBtn" target="_blank" rel="noopener" class="floating-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- ========================================================================
+       LIGHTBOX MODAL FOR GALLERY
+       ======================================================================== -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border border-secondary border-opacity-25 rounded-4 overflow-hidden">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <span class="badge bg-primary mb-1" id="lightboxCategory">Category</span>
+            <h5 class="modal-title text-white fw-bold" id="lightboxTitle">Image Title</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3">
+          <img src="" id="lightboxImg" alt="Gallery Preview" class="img-fluid rounded-3 w-100" style="max-height: 70vh; object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       JOIN NOW / CLASS BOOKING MODAL
+       ======================================================================== -->
+  <div class="modal fade" id="joinModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content admin-modal-content">
+        <div class="modal-header border-secondary border-opacity-25">
+          <h5 class="modal-title fw-bold text-white"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Fast-Track Membership & Trial</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="quickJoinForm">
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Selected Plan / Class</label>
+              <input type="text" class="form-control fw-bold text-info" id="selectedPlanInput" readonly />
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Your Full Name *</label>
+              <input type="text" class="form-control" id="joinName" placeholder="Jordan Taylor" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Phone / WhatsApp *</label>
+              <input type="tel" class="form-control" id="joinPhone" placeholder="+94 77 555 0199" required />
+            </div>
+            <div class="mb-4">
+              <label class="form-label small fw-semibold">Email Address *</label>
+              <input type="email" class="form-control" id="joinEmail" placeholder="jordan@example.com" required />
+            </div>
+            <button type="submit" class="btn btn-brand w-100 py-2.5">Confirm Registration Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECURE ADMIN CMS DASHBOARD MODAL (FRONTEND PROTOTYPE + JSON EXPORT/IMPORT)
+       ======================================================================== -->
+  <div class="modal fade" id="adminCmsModal" tabindex="-1" aria-labelledby="adminCmsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content admin-modal-content">
+        <div class="modal-header border-secondary border-opacity-25">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-logo-box" style="width: 36px; height: 36px; font-size: 1rem;"><i class="bi bi-sliders"></i></span>
+            <div>
+              <h5 class="modal-title fw-bold text-white mb-0" id="adminCmsModalLabel">FITNESS CENTER &amp; GYM — Owner CMS</h5>
+              <small class="text-info">Live Browser State Persistence + JSON Export for Static/Backend Sync</small>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          <!-- Architecture Disclaimer Banner -->
+          <div class="alert alert-info bg-info bg-opacity-10 border-info border-opacity-25 text-light small d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+            <div>
+              <i class="bi bi-info-circle-fill text-info me-2"></i>
+              <strong>CMS Architecture Note:</strong> Changes update the live site immediately and persist in your browser's <code>localStorage</code>. For permanent multi-device production hosting, click <strong>Export site-config.json</strong> or connect Firebase/Supabase.
+            </div>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-sm btn-outline-info" id="exportJsonBtn"><i class="bi bi-download me-1"></i>Export JSON</button>
+              <label class="btn btn-sm btn-outline-light mb-0" style="cursor: pointer;">
+                <i class="bi bi-upload me-1"></i>Import JSON
+                <input type="file" id="importJsonInput" accept=".json" class="d-none" />
+              </label>
+              <button type="button" class="btn btn-sm btn-outline-danger" id="resetDefaultBtn"><i class="bi bi-arrow-counterclockwise me-1"></i>Reset Demo</button>
+            </div>
+          </div>
+
+          <!-- LOGIN GATE VIEW -->
+          <div id="adminLoginGate" class="py-4 mx-auto" style="max-width: 440px;">
+            <div class="glass-card p-4 text-center">
+              <div class="brand-logo-box mx-auto mb-3"><i class="bi bi-shield-lock-fill"></i></div>
+              <h4 class="fw-bold text-white">Gym Owner Login</h4>
+              <p class="small text-secondary mb-3">Authenticate to unlock live content editing for Hero, Gallery, Packages, Trainers, Schedule &amp; Contact settings.</p>
+              <div class="p-2 rounded bg-dark border border-secondary border-opacity-25 small text-info mb-3">
+                Demo Credentials &rarr; User: <strong>admin</strong> | Pass: <strong>gym2026</strong>
+              </div>
+              <form id="adminLoginForm" class="text-start">
+                <div class="mb-3">
+                  <label class="form-label small">Admin Username</label>
+                  <input type="text" class="form-control" id="adminUser" value="admin" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small">Password</label>
+                  <input type="password" class="form-control" id="adminPass" value="gym2026" required />
+                </div>
+                <div id="adminLoginError" class="text-danger small mb-2 d-none">Invalid credentials. Use admin / gym2026.</div>
+                <button type="submit" class="btn btn-brand w-100">Unlock Dashboard</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- AUTHENTICATED CMS WORKSPACE -->
+          <div id="adminWorkspace" class="d-none">
+            <div class="row g-4">
+              <!-- Sidebar Navigation -->
+              <div class="col-lg-3">
+                <div class="nav flex-column nav-pills admin-nav-pills" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tabHero" type="button"><i class="bi bi-image"></i> Hero &amp; Stats</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabGallery" type="button"><i class="bi bi-images"></i> Gallery Manager</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabFacilities" type="button"><i class="bi bi-building"></i> Facilities</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabTrainers" type="button"><i class="bi bi-person-badge"></i> Trainers</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabPackages" type="button"><i class="bi bi-tags"></i> Memberships</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabSchedule" type="button"><i class="bi bi-calendar-week"></i> Weekly Schedule</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabTestimonials" type="button"><i class="bi bi-chat-heart"></i> Testimonials</button>
+                  <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabContact" type="button"><i class="bi bi-envelope-at"></i> Contact &amp; Email API</button>
+                </div>
+                <hr class="border-secondary border-opacity-25" />
+                <button type="button" class="btn btn-outline-secondary btn-sm w-100" id="adminLogoutBtn"><i class="bi bi-box-arrow-left me-1"></i>Lock Dashboard</button>
+              </div>
+
+              <!-- Tab Panes -->
+              <div class="col-lg-9">
+                <div class="tab-content">
+                  <!-- 1. HERO TAB -->
+                  <div class="tab-pane fade show active" id="tabHero">
+                    <h5 class="fw-bold text-white mb-3">Hero Banner &amp; Key Metrics</h5>
+                    <form id="cmsHeroForm" class="row g-3">
+                      <div class="col-12">
+                        <label class="form-label small">Hero Background Image URL</label>
+                        <input type="url" class="form-control" id="cmsHeroBg" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small">Top Tagline Badge</label>
+                        <input type="text" class="form-control" id="cmsHeroBadge" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small">Primary CTA Button Text</label>
+                        <input type="text" class="form-control" id="cmsHeroCta1" required />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small">Main Headline (HTML span allowed)</label>
+                        <input type="text" class="form-control" id="cmsHeroTitle" required />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small">Hero Subtitle</label>
+                        <textarea class="form-control" id="cmsHeroSub" rows="2" required></textarea>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <label class="form-label small">Members Stat</label>
+                        <input type="text" class="form-control" id="cmsStatMembers" />
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <label class="form-label small">Trainers Stat</label>
+                        <input type="text" class="form-control" id="cmsStatTrainers" />
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <label class="form-label small">Equipment Stat</label>
+                        <input type="text" class="form-control" id="cmsStatEquipment" />
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <label class="form-label small">Years Stat</label>
+                        <input type="text" class="form-control" id="cmsStatYears" />
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-brand">Save &amp; Publish Hero</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- 2. GALLERY TAB -->
+                  <div class="tab-pane fade" id="tabGallery">
+                    <h5 class="fw-bold text-white mb-3">Gallery Image Manager</h5>
+                    <form id="cmsAddGalleryForm" class="row g-2 mb-4 p-3 rounded bg-dark border border-secondary border-opacity-25">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newGalTitle" placeholder="Photo Title" required />
+                      </div>
+                      <div class="col-md-3">
+                        <select class="form-select form-select-sm" id="newGalCat">
+                          <option value="Gym Interior">Gym Interior</option>
+                          <option value="Equipment">Equipment</option>
+                          <option value="Training Sessions">Training Sessions</option>
+                          <option value="Events">Events</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5">
+                        <input type="url" class="form-control form-control-sm" id="newGalUrl" placeholder="https://images.unsplash.com/..." required />
+                      </div>
+                      <div class="col-md-8">
+                        <label class="small text-secondary">Or upload local image preview (DataURL):</label>
+                        <input type="file" class="form-control form-control-sm" id="newGalFile" accept="image/*" />
+                      </div>
+                      <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-brand btn-sm w-100"><i class="bi bi-plus-lg me-1"></i>Add Photo</button>
+                      </div>
+                    </form>
+                    <div class="row g-3" id="cmsGalleryList"></div>
+                  </div>
+
+                  <!-- 3. FACILITIES TAB -->
+                  <div class="tab-pane fade" id="tabFacilities">
+                    <h5 class="fw-bold text-white mb-3">Manage Facilities</h5>
+                    <form id="cmsAddFacilityForm" class="row g-2 mb-4 p-3 rounded bg-dark border border-secondary border-opacity-25">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newFacTitle" placeholder="Zone Name (e.g., Recovery Spa)" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newFacTag" placeholder="Badge (e.g., Infrared & Cold)" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="url" class="form-control form-control-sm" id="newFacImg" placeholder="Image URL" required />
+                      </div>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control form-control-sm" id="newFacDesc" placeholder="Short facility description..." required />
+                      </div>
+                      <div class="col-md-3">
+                        <button type="submit" class="btn btn-brand btn-sm w-100">Add Zone</button>
+                      </div>
+                    </form>
+                    <div id="cmsFacilitiesList" class="d-grid gap-2"></div>
+                  </div>
+
+                  <!-- 4. TRAINERS TAB -->
+                  <div class="tab-pane fade" id="tabTrainers">
+                    <h5 class="fw-bold text-white mb-3">Manage Trainers</h5>
+                    <form id="cmsAddTrainerForm" class="row g-2 mb-4 p-3 rounded bg-dark border border-secondary border-opacity-25">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newTrName" placeholder="Trainer Name" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newTrRole" placeholder="Specialty (e.g., Hypertrophy Coach)" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newTrCert" placeholder="Qualifications (CSCS, NASM)" required />
+                      </div>
+                      <div class="col-md-6">
+                        <input type="url" class="form-control form-control-sm" id="newTrImg" placeholder="Portrait Image URL" required />
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control form-control-sm" id="newTrBio" placeholder="Short bio..." required />
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-brand btn-sm">Add Trainer Profile</button>
+                      </div>
+                    </form>
+                    <div id="cmsTrainersList" class="d-grid gap-2"></div>
+                  </div>
+
+                  <!-- 5. PACKAGES TAB -->
+                  <div class="tab-pane fade" id="tabPackages">
+                    <h5 class="fw-bold text-white mb-3">Edit Membership Packages &amp; Prices</h5>
+                    <div id="cmsPackagesList" class="d-grid gap-3"></div>
+                  </div>
+
+                  <!-- 6. SCHEDULE TAB -->
+                  <div class="tab-pane fade" id="tabSchedule">
+                    <h5 class="fw-bold text-white mb-3">Weekly Class Schedule Manager</h5>
+                    <form id="cmsAddScheduleForm" class="row g-2 mb-4 p-3 rounded bg-dark border border-secondary border-opacity-25">
+                      <div class="col-md-2">
+                        <select class="form-select form-select-sm" id="newSchDay">
+                          <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+                          <option>Thursday</option><option>Friday</option><option>Saturday</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <input type="text" class="form-control form-control-sm" id="newSchTime" placeholder="06:00 AM - 07:00 AM" required />
+                      </div>
+                      <div class="col-md-3">
+                        <input type="text" class="form-control form-control-sm" id="newSchClass" placeholder="Class Name" required />
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control form-control-sm" id="newSchCoach" placeholder="Coach" required />
+                      </div>
+                      <div class="col-md-2">
+                        <button type="submit" class="btn btn-brand btn-sm w-100">Add Slot</button>
+                      </div>
+                    </form>
+                    <div id="cmsScheduleList" class="d-grid gap-2"></div>
+                  </div>
+
+                  <!-- 7. TESTIMONIALS TAB -->
+                  <div class="tab-pane fade" id="tabTestimonials">
+                    <h5 class="fw-bold text-white mb-3">Manage Member Testimonials</h5>
+                    <form id="cmsAddTestimonialForm" class="row g-2 mb-4 p-3 rounded bg-dark border border-secondary border-opacity-25">
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newTestName" placeholder="Member Name" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="newTestResult" placeholder="Achievement (e.g., Lost 14kg)" required />
+                      </div>
+                      <div class="col-md-4">
+                        <input type="url" class="form-control form-control-sm" id="newTestImg" placeholder="Avatar URL" required />
+                      </div>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control form-control-sm" id="newTestQuote" placeholder="Review quote..." required />
+                      </div>
+                      <div class="col-md-3">
+                        <button type="submit" class="btn btn-brand btn-sm w-100">Add Review</button>
+                      </div>
+                    </form>
+                    <div id="cmsTestimonialsList" class="d-grid gap-2"></div>
+                  </div>
+
+                  <!-- 8. CONTACT & EMAIL API TAB -->
+                  <div class="tab-pane fade" id="tabContact">
+                    <h5 class="fw-bold text-white mb-3">Gym Contact Info &amp; Formspree Email Integration</h5>
+                    <form id="cmsContactForm" class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label small">Phone Number</label>
+                        <input type="text" class="form-control" id="cmsPhone" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small">WhatsApp Number (digits only with country code)</label>
+                        <input type="text" class="form-control" id="cmsWhatsapp" placeholder="94771234567" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small">Gym Email Address</label>
+                        <input type="email" class="form-control" id="cmsEmail" required />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small">Formspree Form Endpoint URL (Optional for live API)</label>
+                        <input type="url" class="form-control" id="cmsFormspree" placeholder="https://formspree.io/f/yourFormId" />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small">Physical Address</label>
+                        <input type="text" class="form-control" id="cmsAddress" required />
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label small">Opening Hours</label>
+                        <input type="text" class="form-control" id="cmsHours" required />
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-brand">Save Contact &amp; API Settings</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SCRIPTS: BOOTSTRAP 5, AOS, SWIPER.JS & APPLICATION ENGINE
+       ======================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
